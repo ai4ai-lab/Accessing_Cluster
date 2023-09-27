@@ -15,11 +15,11 @@ A job is defined by a shell script such as job.sh (shown below)
 
 ![image](https://github.com/ai4ai-lab/Accessing_Cluster/assets/60004524/38d18c4d-5651-465b-89ca-6fc467168476)
 
-This example requires the job.sh to be in the same directory as the file you need to run. for most python projects these two modules should suffice but if your program requires other modules you can see which are available using the comand module avail at the terminal. See https://wiki.imperial.ac.uk/display/HPC/Applications for other available applications. 
+This example requires the job.sh to be in the same directory as the file you need to run. for most python projects these two modules should suffice but if your program requires other modules you can see which are available using the comand 'module avail' at the terminal. See https://wiki.imperial.ac.uk/display/HPC/Applications for other available applications. 
 
-To submit the job, first run the command 'sed -i 's/\r$//' job.sh ' in the terminal Followed by qsub job.sh. 
+To submit the job, first run the command 'sed -i 's/\r$//' job.sh ' in the terminal Followed by 'qsub job.sh' . 
 
-Status of the job can then be checked with the command qstat. 
+Status of the job can then be checked with the command 'qstat' . 
 
 Two files should have been created in the process jobname.exxxx and jobname.oxxxxx which will contain any possible error messages or outputs from you program (if your output is some data file these will have been created where you specify in your code).
 
